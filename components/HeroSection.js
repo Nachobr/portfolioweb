@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Typewriter from 'react-typed';
 import styles from './HeroSectionStyles.module.css';
 
-const HeroSection = () => {
 
+const HeroSection = ({t}) => {
+  
   const [showMenu, setShowMenu] = useState(false);
   
-
+  
   const handleClick = () => {
     setShowMenu(!showMenu);
   };
@@ -14,13 +15,14 @@ const HeroSection = () => {
   return (
     <div className={styles['hero-container']}>
       <div className={styles['hero-content']}>
-        <h1 className={styles['hero-h1']}>Hello, welcome to my portfolio site! I'm Ignacio Britos</h1>
+        <h1 className={styles['hero-h1']}>{t("Hello")}</h1>
+        
         <p className={styles['hero-p']}>
           <Typewriter
             strings={["Basic Smart Contract Dev","FullStack Web Developer", "UI/UX Designer"]}
             autoStart={true}
             loop={true}
-            onComplete={(self) => console.log("Typewriter completed")}
+            
           />
         </p>
         <button className={styles['hero-btn']} onClick={handleClick}>View My Work</button>

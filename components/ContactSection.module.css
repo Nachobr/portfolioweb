@@ -1,0 +1,44 @@
+.contact-container {
+    background-color: #222;
+    
+  }
+  
+  .contact-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .contact-p {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+  }
+  
+  .contact-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  

@@ -1,0 +1,76 @@
+.projects-container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.project-card {
+  display: block;
+  position: relative;
+  height: 60rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.project-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.project-card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.project-card-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(219, 198, 198);
+  background-color: #333; /* updated background color */
+  border-radius: 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-card-link:hover {
+  background-color: #333;
+}
+
+.project-card-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.project-card-link:active {
+  transform: translateY(0.25rem);
+}
+
+.project-card-link:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.project-card:focus-within .project-card-link {
+  transform: translateY(-0.25rem);
+}
+/* added class selector for h2 element */
+.projects-container h2 {
+  @apply text-3xl font-bold text-center mb-10;
+}

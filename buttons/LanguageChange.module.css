@@ -1,0 +1,25 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    margin-left: 1em;
+    padding: 0;
+    padding-right: 1em;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #1c538a;
+    color: gray.200;
+  }
+  
+  .button:focus {
+    box-shadow: outline;
+  }
+  
+  .menu {
+    min-width: fit-content;
+  }
+  

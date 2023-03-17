@@ -3,7 +3,7 @@ import HeroSection from '../../components/HeroSection';
 import SkillsSection from '../../components/SkillsSection';
 import PortfolioSection from '../../components/PortfolioSection';
 import ContactSection from '../../components/ContactSection';
-import LanguageChange from '../../buttons/LanguageChange';
+import Navbar from '../../components/NavBar/NavBar';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Home() {
@@ -17,9 +17,8 @@ export default function Home() {
         <title>My Portfolio Website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <HeroSection t={t}/>
-      <LanguageChange />
-      <p> {t("Some text")}</p>
       <SkillsSection />
       <PortfolioSection />
       <ContactSection />

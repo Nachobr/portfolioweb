@@ -5,6 +5,8 @@ import React from 'react';
 import setLanguage from 'next-translate/setLanguage'
 import Cookies from 'js-cookie'
 
+import styles from './languagechange.module.css';
+
 const LanguageChange = () => {
   const { lang } = useTranslation('common')
 
@@ -22,7 +24,7 @@ const LanguageChange = () => {
   }
 
   return (
-    <Menu>
+    <Menu offset={[-2, 0]}>
       <MenuButton
         as={Button}
         aria-label="language"
@@ -34,6 +36,7 @@ const LanguageChange = () => {
         _hover={{ bg: '#1C538A', color: 'gray.200' }}
         _expanded={{ bg: 'blue.400' }}
         _focus={{ boxShadow: 'outline' }}
+        className={styles.languageButton}
       // isDisabled
       >
         {lang ? lang.toUpperCase() : 'LANG'}

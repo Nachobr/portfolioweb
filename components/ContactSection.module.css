@@ -12,11 +12,13 @@
   .contact-h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
+    color: white;
   }
   
   .contact-p {
     font-size: 1.5rem;
     margin-bottom: 50px;
+    color: white;
   }
   
   .contact-details {
@@ -34,6 +36,7 @@
   .contact-icon {
     font-size: 4rem;
     margin-bottom: 20px;
+    color: white;
   }
   
   .contact-link {

@@ -29,8 +29,8 @@ const HeroSection = ({t}) => {
         {showMenu && (
           <div className={styles['hero-menu']}>
             <a className={styles['hero-menu-item']} href="https://app.yubiai.market/" target="_blank">Yubiai the web3 marketplace</a>
-            <a className={styles['hero-menu-item']} href="#">IA personal responser</a>
-            <a className={styles['hero-menu-item']} href="#">360 Model renderer</a>
+            <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/mymeAI">IA personal responser(unfinished)</a>
+            <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/dbi360">360 Model renderer</a>
           </div>
         )}
       </div>

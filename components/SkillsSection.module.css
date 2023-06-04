@@ -12,13 +12,14 @@
   .skills-h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
+    color: white;
   }
   
   .skills-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    fill: white;
   }
   
   .skill-icon {
@@ -26,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px;
-    
+    color: white;
   }
   
   .skill-iconSolid {
@@ -40,5 +41,6 @@
   .skill-name {
     font-size: 1.5rem;
     margin-top: 20px;
+    color: white;
   }
   

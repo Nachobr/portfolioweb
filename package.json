@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "peerDependencies": {
-    "react-typed": "*"
+    "react-typed": "^1.2.0"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.5.1",
+    "@swc/helpers": "^0.5.1",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "js-cookie": "^3.0.1",

@@ -22,7 +22,7 @@ const SkillsSection = () => {
                             <p className={styles['skill-name']}>CSS3</p>
                         </div>
                         <div className={styles['skill-icon']}>
-                            <FaJs size="3rem" />
+                            <FaJs size="3rem" fill="white" />
                             <p className={styles['skill-name']}>JavaScript</p>
                         </div>
                         <div className={styles['skill-icon']}>

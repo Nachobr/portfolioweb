@@ -11,6 +11,13 @@
   text-align: center;
 }
 
+.profile-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
 .hero-h1 {
   font-size: 2.5rem;
   color: #fff;

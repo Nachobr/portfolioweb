@@ -17,11 +17,11 @@ export default function Home() {
         <title>My Portfolio Website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      <Navbar t={t}/>
       <HeroSection t={t}/>
-      <SkillsSection />
+      <SkillsSection t={t}/>
       <PortfolioSection />
-      <ContactSection />
+      <ContactSection t={t}/>
     </>
   );
 }

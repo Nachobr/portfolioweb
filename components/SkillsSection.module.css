@@ -44,3 +44,16 @@
     color: white;
   }
   
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      padding: 170px 0;
+    }
+    /*.skills-icons {
+      justify-content: flex-start;
+    }
+    
+    .skill-icon {
+      margin: 10px;
+    }
+    */
+  }

@@ -1,4 +1,16 @@
 {
     "Some text": "Texto",
-    "Hello": "¡Hola, bienvenido a mi portfolio! Soy Ignacio Britos."
+    "Hello": "¡Hola, bienvenido a mi portfolio! Soy Ignacio Britos.",
+    "Home": "Inicio",
+    "My Skills": "Habilidades",
+    "Contact": "Contacto",
+    "Basic Smart Contract Dev": "Desarrolador de Contratos Inteligentes",
+    "FullStack Web Developer": "Desarrollador Web FullStack",
+    "UI/UX Designer": "Diseñador UX/UI",
+    "View My Work": "Mis trabajos",
+    "Yubiai the web3 marketplace": "Yubiai el marketplace web3",
+    "AI personal responser(unfinished)": "IA respondedor personal(incompleto)",
+    "360 Model renderer": "Renderizador de vistas en 360°",
+    "Contact Me": "Contacto",
+    "Feel free": "No dude en ponerse en contacto conmigo si tiene alguna pregunta o si desea colaborar en un proyecto."
 }

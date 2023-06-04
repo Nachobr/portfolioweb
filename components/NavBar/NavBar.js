@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import styles from "./Navbar.module.css";
 import LanguageChange from '../../buttons/LanguageChange';
 
-const Navbar = () => {
+const Navbar = ({t}) => {
     const router = useRouter();
 
     return (
@@ -11,17 +11,17 @@ const Navbar = () => {
             <ul className={styles.navbarList}>
                 <li style={{marginRight:"10px"}}>
                     <Link href="/">
-                        <div className={router.pathname === "/" ? styles.active : ""}>Home</div>
+                        <div className={router.pathname === "/" ? styles.active : ""}>{t("Home")}</div>
                     </Link>
                 </li>
                 <li style={{marginRight:"10px"}}>
                     <Link href="#myskills">
-                        <div>My Skills</div>
+                        <div>{t("My Skills")}</div>
                     </Link>
                 </li>
                 <li>
                     <Link href="#contact">
-                        <div>Contact</div>
+                        <div>{t("Contact")}</div>
                     </Link>
                 </li>
                 

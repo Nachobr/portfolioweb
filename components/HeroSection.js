@@ -15,22 +15,23 @@ const HeroSection = ({t}) => {
   return (
     <div className={styles['hero-container']}>
       <div className={styles['hero-content']}>
+        <img src="./ProfPic.jpg" alt="Profile Picture" className={styles['profile-pic']} />
         <h1 className={styles['hero-h1']}>{t("Hello")}</h1>
         
         <p className={styles['hero-p']}>
           <Typewriter
-            strings={["Basic Smart Contract Dev","FullStack Web Developer", "UI/UX Designer"]}
+            strings={[t("Basic Smart Contract Dev"),t("FullStack Web Developer"), t("UI/UX Designer")]}
             autoStart={true}
             loop={true}
             
           />
         </p>
-        <button className={styles['hero-btn']} onClick={handleClick}>View My Work</button>
+        <button className={styles['hero-btn']} onClick={handleClick}>{t("View My Work")}</button>
         {showMenu && (
           <div className={styles['hero-menu']}>
-            <a className={styles['hero-menu-item']} href="https://app.yubiai.market/" target="_blank">Yubiai the web3 marketplace</a>
-            <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/mymeAI">IA personal responser(unfinished)</a>
-            <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/dbi360">360 Model renderer</a>
+            <a className={styles['hero-menu-item']} href="https://app.yubiai.market/" target="_blank">{t("Yubiai the web3 marketplace")}</a>
+            <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/mymeAI" target="_blank">{t("AI personal responser(unfinished)")}</a>
+            <a className={styles['hero-menu-item']} href="https://sites.google.com/view/pruebamodelado/home" target="_blank">{t("360 Model renderer")}</a>
           </div>
         )}
       </div>

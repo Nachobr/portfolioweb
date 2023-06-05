@@ -5,7 +5,7 @@ import React from 'react';
 import setLanguage from 'next-translate/setLanguage'
 import Cookies from 'js-cookie'
 
-import styles from './languagechange.module.css';
+import styles from './LanguageChange.module.css';
 
 const LanguageChange = () => {
   const { lang } = useTranslation('common')

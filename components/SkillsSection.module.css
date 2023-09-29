@@ -10,6 +10,7 @@
   }
   
   .skills-h2 {
+    margin-top: 2em;
     font-size: 2.5rem;
     margin-bottom: 50px;
     color: white;
@@ -46,7 +47,7 @@
   
   @media screen and (max-width: 768px) {
     .skills-container {
-      padding: 170px 0;
+      padding: 17px 0;
     }
     /*.skills-icons {
       justify-content: flex-start;

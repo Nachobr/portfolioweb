@@ -16,7 +16,7 @@ const Navbar = ({t}) => {
                 </li>
                 <li style={{marginRight:"10px"}}>
                     <Link href="#myskills">
-                        <div>{t("My Skills")}</div>
+                        <div>{t("Skills")}</div>
                     </Link>
                 </li>
                 <li>

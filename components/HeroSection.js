@@ -20,7 +20,7 @@ const HeroSection = ({t}) => {
         
         <p className={styles['hero-p']}>
           <Typewriter
-            strings={[t("Basic Smart Contract Dev"),t("FullStack Web Developer"), t("UI/UX Designer")]}
+            strings={[t("Basic Smart Contract Dev"),t("FullStack Web Developer")]}
             autoStart={true}
             loop={true}
             

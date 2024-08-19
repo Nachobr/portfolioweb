@@ -29,7 +29,7 @@ const HeroSection = ({t}) => {
         <button className={styles['hero-btn']} onClick={handleClick}>{t("Portfolio")}</button>
         {showMenu && (
           <div className={styles['hero-menu']}>
-            <a className={styles['hero-menu-item']} href="https://www.yubiai.market/es" target="_blank">{t("Yubiai Landing")}</a>
+            <a className={styles['hero-menu-item']} href="https://website-yubiai.vercel.app/es" target="_blank">{t("Yubiai Landing")}</a>
             <a className={styles['hero-menu-item']} href="https://app.yubiai.market/es" target="_blank">{t("Yubiai App(team work)")}</a>
             <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/mymeAI" target="_blank">{t("AI personal responser(unfinished)")}</a>
             <a className={styles['hero-menu-item']} href="https://sites.google.com/view/pruebamodelado/home" target="_blank">{t("360 Model renderer")}</a>

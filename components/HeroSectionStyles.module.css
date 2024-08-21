@@ -18,6 +18,28 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .profile-pic {
+    width: 150px; 
+    margin-top: 2em;
+  }
+  .hero-h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .profile-pic {
+    width: 120px;
+    margin-top: 2em; 
+  }
+  .hero-h1 {
+    font-size: 1.5rem;
+    background-color: 1px dotted blue;
+  }
+}
+
 .hero-h1 {
   font-size: 2.5rem;
   color: #fff;

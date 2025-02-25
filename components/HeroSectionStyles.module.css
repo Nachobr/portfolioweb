@@ -1,98 +1,99 @@
 .hero-container {
+  background: #1a1a1a; /* Fondo oscuro estilo cyberpunk */
+  min-height: 100vh;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
-  height: 64vh;
-  background-color: #222;
 }
 
 .hero-content {
   text-align: center;
+  padding: 2rem;
 }
 
 .profile-pic {
-  width: 200px;
-  height: auto;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .profile-pic {
-    width: 150px; 
-    margin-top: 2em;
-  }
-  .hero-h1 {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .profile-pic {
-    width: 120px;
-    margin-top: 2em; 
-  }
-  .hero-h1 {
-    font-size: 1.5rem;
-    background-color: 1px dotted blue;
-  }
+  margin-bottom: 1.5rem;
+  border: 2px solid #00b7ff; /* Borde neón para destacar */
 }
 
 .hero-h1 {
+  color: #00b7ff; /* Azul neón */
   font-size: 2.5rem;
-  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in; /* Animación de entrada */
 }
 
 .hero-p {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
-  margin: 2rem 0;
+  font-size: 1.25rem;
+  color: #cccccc; /* Gris claro para legibilidad */
+  margin-bottom: 2rem;
 }
 
 .hero-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #00b7ff; /* Azul neón */
+  color: #fff;
   border: none;
   border-radius: 5px;
-  outline: none;
-  background-color: #fff;
-  color: #222;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.3s ease;
 }
 
 .hero-btn:hover {
-  background-color: #333;
-  color: #fff;
+  background: #061cea; /* Magenta neón al hover */
 }
 
 .hero-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  margin-top: 1rem;
+  background: #1a1a1a; /* Fondo blanco para contraste */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 183, 255, 0.2); /* Sombra con toque neón */
+  transform: translateY(-20px); /* Posición inicial para animación */
+  opacity: 0; /* Oculto por defecto */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.menu-animate {
+  transform: translateY(0); /* Se mueve a su lugar */
+  opacity: 1; /* Aparece */
 }
 
 .hero-menu-item {
   display: block;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
+  padding: 0.75rem;
+  color: #00b7ff; /* Azul neón */
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  position: relative; /* Para el subrayado animado */
 }
 
 .hero-menu-item:hover {
-  background-color: #f2f2f2;
+  color: #061cea; /* Magenta neón al hover */
+}
+
+.hero-menu-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #061cea; /* Subrayado magenta */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease; /* Animación del subrayado */
+}
+
+.hero-menu-item:hover::after {
+  width: 100%; /* Subrayado completo al hover */
+}
+
+/* Animación de entrada para el título */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

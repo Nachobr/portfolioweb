@@ -29,7 +29,7 @@ const HeroSection = ({ t }) => {
             <a className={styles['hero-menu-item']} href="https://website-yubiai.vercel.app/es" target="_blank">
               {t("Yubiai Landing")}
             </a>
-            <a className={styles['hero-menu-item']} href="https://app.yubiai.market/es" target="_blank">
+            <a className={styles['hero-menu-item']} href="https://marketplace-front-sigma.vercel.app" target="_blank">
               {t("Yubiai App(team work)")}
             </a>
             <a className={styles['hero-menu-item']} href="https://github.com/Nachobr/mymeAI" target="_blank">

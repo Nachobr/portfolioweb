@@ -26,6 +26,9 @@ const HeroSection = ({ t }) => {
         </button>
         {showMenu && (
           <div className={`${styles['hero-menu']} ${styles['menu-animate']}`}>
+            <a className={styles['hero-menu-item']} href="https://v0-token-manager-dapp.vercel.app/" target="_blank">
+              {t("Token Manager")}
+            </a>
             <a className={styles['hero-menu-item']} href="https://website-yubiai.vercel.app/es" target="_blank">
               {t("Yubiai Landing")}
             </a>

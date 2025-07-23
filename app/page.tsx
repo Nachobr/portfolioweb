@@ -241,9 +241,9 @@ const projects = [
     id: 7,
     titleKey: "project7.title",
     descriptionKey: "project7.description",
-    image: "/projects/picCounter.png",
+    image: "/projects/porcon.png",
     technologies: ["Python", "OpenCV", "Next.js", "Roboflow"],
-    link: "https://contador-cerdos.vercel.app/",
+    link: "https://porcon.vercel.app/",
   },
 ]
 

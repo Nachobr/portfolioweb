@@ -186,6 +186,8 @@ const techStack = [
   "Git",
   "HTML5",
   "CSS3",
+  "Three.js",
+  "Gemini",
 ]
 
 const projects = [
@@ -245,6 +247,22 @@ const projects = [
     technologies: ["Python", "OpenCV", "Next.js", "Roboflow"],
     link: "https://porcon.vercel.app/",
   },
+  {
+    id: 8,
+    titleKey: "project8.title",   
+    descriptionKey: "project8.description",
+    image: "/projects/creditosHipotecarios.png",
+    technologies: ["AI", "Next.js", "Vercel", "Gemini"],
+    link: "https://creditoshipotecariosarg.vercel.app/",
+  },
+  {
+    id: 9,
+    titleKey: "project9.title",
+    descriptionKey: "project9.description",
+    image: "/projects/f1-race-game.png",
+    technologies: ["Unity", "C#", "Blender"],
+    link: "#",
+  },
 ]
 
 function TypewriterEffect() {
@@ -252,7 +270,7 @@ function TypewriterEffect() {
     <div className="typewriter">
       <span className="text-primary font-medium">
         {"<"}
-        <span className="typing-text">Basic Smart Contract Dev, FullStack Web Developer</span>
+        <span className="typing-text">Software Engineer</span>
         {" />"}
       </span>
     </div>

@@ -12,20 +12,20 @@ interface LanguageContextType {
 
 const translations = {
   es: {
-    "nav.about": "Sobre Mí",
-    "nav.projects": "Proyectos",
-    "nav.contact": "Contacto",
-    "hero.title": "Desarrollador Full Stack especializado en crear experiencias digitales excepcionales",
-    "hero.cta": "Explora Mi Trabajo",
-    "about.title": "Sobre Mí",
-    "about.p1":
-      "Soy un desarrollador Full Stack con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
+      "nav.about": "Sobre Mí",
+      "nav.projects": "Proyectos",
+      "nav.contact": "Contacto",
+      "hero.title": "Ingeniero de Software especializado en crear experiencias digitales excepcionales",
+      "hero.cta": "Explora Mi Trabajo",
+      "about.title": "Sobre Mí",
+      "about.p1":
+        "Soy Ingeniero de Software con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
     "about.p2":
       "Mi experiencia se extiende al desarrollo blockchain con Smart Contracts, y al campo de la inteligencia artificial y visión por computadora utilizando Python, TensorFlow, OpenCV y Roboflow. También he trabajado con tecnologías de visualización 3D utilizando WebGL y JavaScript.",
     "about.p3":
       "Me especializo en crear soluciones digitales completas, desde interfaces de usuario atractivas y responsivas hasta sistemas backend robustos y escalables. Tengo experiencia en despliegue de aplicaciones en plataformas como Vercel y en la integración de servicios de terceros para crear experiencias de usuario excepcionales.",
     "about.p4":
-      "Además de mi trabajo como desarrollador, me apasiona aprender nuevas tecnologías, resolver problemas complejos y compartir conocimientos con la comunidad tecnológica.",
+      "Además de mi trabajo como Ingeniero de Software, me apasiona aprender nuevas tecnologías, resolver problemas complejos y compartir conocimientos con la comunidad tecnológica.",
     "projects.title": "Proyectos Destacados",
     "project1.title": "Token Manager",
     "project1.description": "Aplicación descentralizada para la gestión de tokens en blockchain.",
@@ -47,16 +47,22 @@ const translations = {
     "contact.title": "Contacto",
     "contact.text": "¿Interesado en trabajar juntos? Estoy abierto a nuevas oportunidades y colaboraciones.",
     "footer.rights": "Todos los derechos reservados.",
+    "project8.title": "Agente de IA para creditos UVA",
+    "project8.description":
+      "Agente de IA para soporte de informacion sobre creditos UVA.",
+    "project9.title": "Juego de Carreras F1",
+    "project9.description": "Próximamente",
+    
   },
   en: {
     "nav.about": "About Me",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-    "hero.title": "Full Stack Developer specialized in creating exceptional digital experiences",
+    "hero.title": "Software Engineer specialized in creating exceptional digital experiences",
     "hero.cta": "Explore My Work",
     "about.title": "About Me",
     "about.p1":
-      "I'm a Full Stack Developer with extensive experience in modern web technologies. My main stack includes React, Next.js, Node.js, and TailwindCSS for frontend and backend development. I have experience working with SQL and NoSQL databases, as well as RESTful and GraphQL APIs.",
+      "I'm a Software Engineer with extensive experience in modern web technologies. My main stack includes React, Next.js, Node.js, and TailwindCSS for frontend and backend development. I have experience working with SQL and NoSQL databases, as well as RESTful and GraphQL APIs.",
     "about.p2":
       "My expertise extends to blockchain development with Smart Contracts, and to the field of artificial intelligence and computer vision using Python, TensorFlow, OpenCV, and Roboflow. I've also worked with 3D visualization technologies using WebGL and JavaScript.",
     "about.p3":
@@ -80,6 +86,11 @@ const translations = {
     "project7.description":
       "Computer vision application that detects and counts pigs in real-time, with a Next.js frontend and backend integrated with Roboflow.",
     "project.viewProject": "View project",
+    "project8.title": "UVA Credits AI Agent",
+    "project8.description":
+      "AI agent for support on UVA credits.",
+    "project9.title": "F1 Race Game",
+    "project9.description": "Coming soon",
     "contact.title": "Contact",
     "contact.text": "Interested in working together? I'm open to new opportunities and collaborations.",
     "footer.rights": "All rights reserved.",

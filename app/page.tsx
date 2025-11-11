@@ -260,8 +260,8 @@ const projects = [
     titleKey: "project9.title",
     descriptionKey: "project9.description",
     image: "/projects/f1-race-game.png",
-    technologies: ["Unity", "C#", "Blender"],
-    link: "#",
+    technologies: ["Threejs", "Blender"],
+    link: "https://f1max-orpin.vercel.app/",
   },
 ]
 

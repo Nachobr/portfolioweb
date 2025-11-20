@@ -12,14 +12,14 @@ interface LanguageContextType {
 
 const translations = {
   es: {
-      "nav.about": "Sobre Mí",
-      "nav.projects": "Proyectos",
-      "nav.contact": "Contacto",
-      "hero.title": "Ingeniero de Software especializado en crear experiencias digitales excepcionales",
-      "hero.cta": "Explora Mi Trabajo",
-      "about.title": "Sobre Mí",
-      "about.p1":
-        "Soy Ingeniero de Software con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
+    "nav.about": "Sobre Mí",
+    "nav.projects": "Proyectos",
+    "nav.contact": "Contacto",
+    "hero.title": "Ingeniero de Software especializado en crear experiencias digitales excepcionales",
+    "hero.cta": "Explora Mi Trabajo",
+    "about.title": "Sobre Mí",
+    "about.p1":
+      "Soy Ingeniero de Software con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
     "about.p2":
       "Mi experiencia se extiende al desarrollo blockchain con Smart Contracts, y al campo de la inteligencia artificial y visión por computadora utilizando Python, TensorFlow, OpenCV y Roboflow. También he trabajado con tecnologías de visualización 3D utilizando WebGL y JavaScript.",
     "about.p3":
@@ -51,8 +51,10 @@ const translations = {
     "project8.description":
       "Agente de IA para soporte de informacion sobre creditos UVA.",
     "project9.title": "Juego de Carreras F1",
-    "project9.description": "Próximamente",
-    
+    "project9.description": "Simulador de carreras de F1 en 3D con modo un jugador, multijugador, selección de pistas y editor de pistas.",
+    "project10.title": "Luz Córdoba",
+    "project10.description": "Consulta el estado de tu barrio en tiempo real, reporta incidencias y recibe asistencia con inteligencia artificial.",
+
   },
   en: {
     "nav.about": "About Me",
@@ -90,7 +92,9 @@ const translations = {
     "project8.description":
       "AI agent for support on UVA credits.",
     "project9.title": "F1 Race Game",
-    "project9.description": "Coming soon",
+    "project9.description": "3D F1 racing simulator with single player, multiplayer, track selection, and track editor.",
+    "project10.title": "Luz Córdoba",
+    "project10.description": "Check the status of your neighborhood in real-time, report incidents, and receive assistance with artificial intelligence.",
     "contact.title": "Contact",
     "contact.text": "Interested in working together? I'm open to new opportunities and collaborations.",
     "footer.rights": "All rights reserved.",

@@ -263,6 +263,14 @@ const projects = [
     technologies: ["Threejs", "Blender"],
     link: "https://f1max-orpin.vercel.app/",
   },
+  {
+    id: 10,
+    titleKey: "project10.title",
+    descriptionKey: "project10.description",
+    image: "/projects/luzculeao.png",
+    technologies: ["Next.js", "React", "Vercel", "Google AI"],
+    link: "https://luzculeao.vercel.app/",
+  },
 ]
 
 function TypewriterEffect() {

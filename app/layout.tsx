@@ -9,9 +9,12 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Ignacio Britos | Ingeniero de Software",
+  icons: {
+    icon: "/projects/vcol.png",
+  },
   description:
     "Portfolio personal de Ignacio Britos, Ingeniero de Software especializado en crear experiencias digitales excepcionales.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

@@ -249,7 +249,7 @@ const projects = [
   },
   {
     id: 8,
-    titleKey: "project8.title",   
+    titleKey: "project8.title",
     descriptionKey: "project8.description",
     image: "/projects/creditosHipotecarios.png",
     technologies: ["AI", "Next.js", "Vercel", "Gemini"],
@@ -270,6 +270,14 @@ const projects = [
     image: "/projects/luzculeao.png",
     technologies: ["Next.js", "React", "Vercel", "Google AI"],
     link: "https://luzculeao.vercel.app/",
+  },
+  {
+    id: 11,
+    titleKey: "project11.title",
+    descriptionKey: "project11.description",
+    image: "/projects/vcol.png",
+    technologies: ["React", "WebRTC", "TailwindCSS", "Vercel"],
+    link: "https://vcol.xyz",
   },
 ]
 

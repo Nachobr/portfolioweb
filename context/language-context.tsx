@@ -54,7 +54,8 @@ const translations = {
     "project9.description": "Simulador de carreras de F1 en 3D con modo un jugador, multijugador, selección de pistas y editor de pistas.",
     "project10.title": "Luz Córdoba",
     "project10.description": "Consulta el estado de tu barrio en tiempo real, reporta incidencias y recibe asistencia con inteligencia artificial.",
-
+    "project11.title": "Vcol — Videollamadas P2P Instantáneas",
+    "project11.description": "Videollamadas seguras y sin registro directamente en el navegador.",
   },
   en: {
     "nav.about": "About Me",
@@ -97,6 +98,8 @@ const translations = {
     "project10.description": "Check the status of your neighborhood in real-time, report incidents, and receive assistance with artificial intelligence.",
     "contact.title": "Contact",
     "contact.text": "Interested in working together? I'm open to new opportunities and collaborations.",
+    "project11.title": "Vcol — Instant P2P Video Calling",
+    "project11.description": "Secure, no-login video calling directly in the browser.",
     "footer.rights": "All rights reserved.",
   },
 }

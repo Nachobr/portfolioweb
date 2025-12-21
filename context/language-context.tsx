@@ -58,6 +58,8 @@ const translations = {
     "project11.description": "Videollamadas seguras y sin registro directamente en el navegador.",
     "project12.title": "Legacy Code Archaeologist",
     "project12.description": "Legacy Code Archaeologist es un motor de migración autónomo que desarrollé para manejar el trabajo de \"maratón\" de la refactorización. A diferencia de los asistentes estándar, este agente opera en un ciclo continuo de Observar-Planificar-Actuar-Verificar (OPAV).",
+    "project13.title": "Stuart Chase — Semántica y Pensamiento Crítico",
+    "project13.description": "Plataforma dedicada a la traducción al español de la obra fundamental de Stuart Chase sobre semántica y pensamiento crítico. Permite a los usuarios acceder al libro completo mediante una contribución voluntaria en cripto activos.",
   },
   en: {
     "nav.about": "About Me",
@@ -102,8 +104,9 @@ const translations = {
     "contact.text": "Interested in working together? I'm open to new opportunities and collaborations.",
     "project11.title": "Vcol — Instant P2P Video Calling",
     "project11.description": "Secure, no-login video calling directly in the browser.",
-    "project12.title": "Legacy Code Archaeologist",
     "project12.description": "Legacy Code Archaeologist is an autonomous migration engine I developed to handle the \"marathon\" work of refactoring. Unlike standard assistants, this agent operates in a continuous Observe-Plan-Act-Verify (OPAV) loop.",
+    "project13.title": "Stuart Chase — Semantics & Critical Thinking",
+    "project13.description": "Platform dedicated to the Spanish translation of Stuart Chase's fundamental work on semantics and critical thinking. Allows users to access the complete book through a voluntary crypto contribution.",
     "footer.rights": "All rights reserved.",
   },
 }

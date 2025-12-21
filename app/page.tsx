@@ -287,6 +287,14 @@ const projects = [
     technologies: ["AI", "Auto-migration", "OPAV", "Vercel"],
     link: "https://archrefactor.vercel.app/",
   },
+  {
+    id: 13,
+    titleKey: "project13.title",
+    descriptionKey: "project13.description",
+    image: "/projects/semanticsbook.png",
+    technologies: ["React", "Next.js", "Web3", "Vercel"],
+    link: "https://semanticsbook.vercel.app/",
+  },
 ]
 
 function TypewriterEffect() {

@@ -126,7 +126,7 @@ export default function Home() {
           <p className="text-muted-foreground mb-8">{t("contact.text")}</p>
           <div className="flex justify-center gap-6">
             <Link
-              href="mailto:contacto@nachobrit.xyz"
+              href="mailto:ignbritos@gmail.com"
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Mail size={20} />

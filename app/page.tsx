@@ -279,6 +279,14 @@ const projects = [
     technologies: ["React", "WebRTC", "TailwindCSS", "Vercel"],
     link: "https://vcol.xyz",
   },
+  {
+    id: 12,
+    titleKey: "project12.title",
+    descriptionKey: "project12.description",
+    image: "/projects/archrefactor.png",
+    technologies: ["AI", "Auto-migration", "OPAV", "Vercel"],
+    link: "https://archrefactor.vercel.app/",
+  },
 ]
 
 function TypewriterEffect() {

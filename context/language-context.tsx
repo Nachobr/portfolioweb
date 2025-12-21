@@ -56,6 +56,8 @@ const translations = {
     "project10.description": "Consulta el estado de tu barrio en tiempo real, reporta incidencias y recibe asistencia con inteligencia artificial.",
     "project11.title": "Vcol — Videollamadas P2P Instantáneas",
     "project11.description": "Videollamadas seguras y sin registro directamente en el navegador.",
+    "project12.title": "Legacy Code Archaeologist",
+    "project12.description": "Legacy Code Archaeologist es un motor de migración autónomo que desarrollé para manejar el trabajo de \"maratón\" de la refactorización. A diferencia de los asistentes estándar, este agente opera en un ciclo continuo de Observar-Planificar-Actuar-Verificar (OPAV).",
   },
   en: {
     "nav.about": "About Me",
@@ -100,6 +102,8 @@ const translations = {
     "contact.text": "Interested in working together? I'm open to new opportunities and collaborations.",
     "project11.title": "Vcol — Instant P2P Video Calling",
     "project11.description": "Secure, no-login video calling directly in the browser.",
+    "project12.title": "Legacy Code Archaeologist",
+    "project12.description": "Legacy Code Archaeologist is an autonomous migration engine I developed to handle the \"marathon\" work of refactoring. Unlike standard assistants, this agent operates in a continuous Observe-Plan-Act-Verify (OPAV) loop.",
     "footer.rights": "All rights reserved.",
   },
 }

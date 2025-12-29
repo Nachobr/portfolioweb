@@ -188,6 +188,7 @@ const techStack = [
   "CSS3",
   "Three.js",
   "Gemini",
+  "Prompt Engineering",
 ]
 
 const projects = [
@@ -294,6 +295,14 @@ const projects = [
     image: "/projects/semanticsbook.png",
     technologies: ["React", "Next.js", "Web3", "Vercel"],
     link: "https://semanticsbook.vercel.app/",
+  },
+  {
+    id: 14,
+    titleKey: "project14.title",
+    descriptionKey: "project14.description",
+    image: "/projects/promptcraft.png",
+    technologies: ["React", "Next.js", "AI", "LLM"],
+    link: "https://promptcrafter-chi.vercel.app/",
   },
 ]
 

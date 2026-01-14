@@ -71,7 +71,7 @@ export default function Home() {
             <p>{t("about.p4")}</p>
 
             <div className="pt-6">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Tech Stack</h3>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Familiar with</h3>
               <div className="flex flex-wrap gap-2">
                 {techStack.map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
@@ -188,6 +188,7 @@ const techStack = [
   "CSS3",
   "Three.js",
   "Gemini",
+  "Claude",
   "Prompt Engineering",
 ]
 
@@ -359,7 +360,7 @@ function TypewriterEffect() {
     <div className="typewriter">
       <span className="text-primary font-medium">
         {"<"}
-        <span className="typing-text">Software Engineer</span>
+        <span className="typing-text">Vibe Engineer</span>
         {" />"}
       </span>
     </div>

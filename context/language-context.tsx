@@ -15,17 +15,17 @@ const translations = {
     "nav.about": "Sobre Mí",
     "nav.projects": "Proyectos",
     "nav.contact": "Contacto",
-    "hero.title": "Ingeniero de Software especializado en crear experiencias digitales excepcionales",
+    "hero.title": "Vibe Engineer especializado en crear experiencias digitales excepcionales",
     "hero.cta": "Explora Mi Trabajo",
     "about.title": "Sobre Mí",
     "about.p1":
-      "Soy Ingeniero de Software con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
+      "Soy Vibe Engineer con amplia experiencia en tecnologías web modernas. Mi stack principal incluye React, Next.js, Node.js y TailwindCSS para el desarrollo frontend y backend. Tengo experiencia trabajando con bases de datos SQL y NoSQL, así como con APIs RESTful y GraphQL.",
     "about.p2":
       "Mi experiencia se extiende al desarrollo blockchain con Smart Contracts, y al campo de la inteligencia artificial y visión por computadora utilizando Python, TensorFlow, OpenCV y Roboflow. También he trabajado con tecnologías de visualización 3D utilizando WebGL y JavaScript.",
     "about.p3":
       "Me especializo en crear soluciones digitales completas, desde interfaces de usuario atractivas y responsivas hasta sistemas backend robustos y escalables. Tengo experiencia en despliegue de aplicaciones en plataformas como Vercel y en la integración de servicios de terceros para crear experiencias de usuario excepcionales.",
     "about.p4":
-      "Además de mi trabajo como Ingeniero de Software, me apasiona aprender nuevas tecnologías, resolver problemas complejos y compartir conocimientos con la comunidad tecnológica.",
+      "Además de mi trabajo como Vibe Engineer, me apasiona aprender nuevas tecnologías, resolver problemas complejos y compartir conocimientos con la comunidad tecnológica.",
     "projects.title": "Proyectos Destacados",
     "project1.title": "Token Manager",
     "project1.description": "Aplicación descentralizada para la gestión de tokens en blockchain.",
@@ -79,11 +79,11 @@ const translations = {
     "nav.about": "About Me",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
-    "hero.title": "Software Engineer specialized in creating exceptional digital experiences",
+    "hero.title": "Vibe Engineer specialized in creating exceptional digital experiences",
     "hero.cta": "Explore My Work",
     "about.title": "About Me",
     "about.p1":
-      "I'm a Software Engineer with extensive experience in modern web technologies. My main stack includes React, Next.js, Node.js, and TailwindCSS for frontend and backend development. I have experience working with SQL and NoSQL databases, as well as RESTful and GraphQL APIs.",
+      "I'm a Vibe Engineer with extensive experience in modern web technologies. My main stack includes React, Next.js, Node.js, and TailwindCSS for frontend and backend development. I have experience working with SQL and NoSQL databases, as well as RESTful and GraphQL APIs.",
     "about.p2":
       "My expertise extends to blockchain development with Smart Contracts, and to the field of artificial intelligence and computer vision using Python, TensorFlow, OpenCV, and Roboflow. I've also worked with 3D visualization technologies using WebGL and JavaScript.",
     "about.p3":

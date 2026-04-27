@@ -74,6 +74,10 @@ const translations = {
     "project19.description": "Una herramienta de análisis SEO impulsada por IA que proporciona auditorías integrales de sitios web en segundos. Construida con React, TypeScript y potenciada por el modelo Llama 3 de Groq.",
     "project20.title": "EdgeLend",
     "project20.description": "Una terminal DeFi de grado institucional que combina datos de Chainlink en vivo con un motor de simulación de alta velocidad para demostrar estrategias complejas de préstamos y arbitraje en tiempo real. Ofrece una experiencia estilo 'Bloomberg' para monitorear posiciones, factores de salud y liquidaciones.",
+    "project21.title": "Viandita",
+    "project21.description": "Aplicación web para descubrir, pedir y gestionar viandas caseras y saludables. Conecta a usuarios con cocineros locales a través de una experiencia móvil ágil y sencilla.",
+    "project22.title": "ForgeAI — Generador de Mundos UEFN con IA",
+    "project22.description": "Convierte ideas de juegos en lenguaje natural en scaffolds de proyectos UEFN: código Verse, manifiestos de dispositivos, planes de layout, configuraciones de economía, tablas de loot e instrucciones de importación.",
   },
   en: {
     "nav.about": "About Me",
@@ -136,6 +140,10 @@ const translations = {
     "project19.description": "An AI-powered SEO analysis tool that provides comprehensive website audits in seconds. Built with React, TypeScript, and powered by Groq's Llama 3 model.",
     "project20.title": "EdgeLend",
     "project20.description": "An institutional-grade DeFi terminal that combines live Chainlink data with a high-speed simulation engine to demonstrate complex lending and arbitrage strategies in real-time. EdgeLend offers a 'Bloomberg-style' experience for monitoring positions, health factors, and liquidations.",
+    "project21.title": "Viandita",
+    "project21.description": "Web app to discover, order, and manage homemade, healthy meals. Connects users with local cooks through a smooth, mobile-first experience.",
+    "project22.title": "ForgeAI — AI-Powered UEFN World Generator",
+    "project22.description": "Turns natural-language game ideas into UEFN project scaffolds: Verse code, device manifests, layout plans, economy configs, loot tables, and import instructions.",
     "footer.rights": "All rights reserved.",
   },
 }

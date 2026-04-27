@@ -3,14 +3,14 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin, Mail, ArrowUpRight, ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/context/language-context"
 
 export default function Home() {
-  const { t, language } = useLanguage()
+  const { t } = useLanguage()
   const projectsRef = useRef<HTMLElement>(null)
 
   const scrollToProjects = () => {
@@ -18,63 +18,96 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="container mx-auto px-4 py-8">
-        <div className="flex justify-between items-center">
-          <h1 className="text-xl md:text-2xl font-bold">NachoBrit</h1>
-          <div className="flex items-center gap-2 md:gap-4">
-            <ThemeToggle />
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Frosted fixed nav */}
+      <header className="fixed top-0 inset-x-0 z-50 nav-frost border-b hairline">
+        <div className="mx-auto max-w-6xl px-4 md:px-6 h-14 flex items-center justify-between">
+          <Link href="#" className="font-mono text-sm font-semibold tracking-tight">
+            <span className="text-primary">~/</span>nachobrit
+          </Link>
+          <nav className="hidden md:flex items-center gap-7 text-sm">
+            <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+              {t("nav.about")}
+            </Link>
+            <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
+              {t("nav.projects")}
+            </Link>
+            <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              {t("nav.contact")}
+            </Link>
+          </nav>
+          <div className="flex items-center gap-1.5">
             <LanguageSwitcher />
-            {/* Mobile menu button could be added here */}
-            <nav className="hidden md:flex gap-4 md:gap-6">
-              <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                {t("nav.about")}
-              </Link>
-              <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                {t("nav.projects")}
-              </Link>
-              <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                {t("nav.contact")}
-              </Link>
-            </nav>
+            <ThemeToggle />
           </div>
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-8 md:py-12">
-        <section className="flex flex-col items-center text-center space-y-4 md:space-y-6 py-8 md:py-16">
-          <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48">
-            <Image
-              src="/ProfPic.jpg"
-              alt="Nacho Brit"
-              fill
-              className="rounded-full object-cover"
-              priority
-            />
+      <main className="pt-14">
+        {/* HERO */}
+        <section className="relative overflow-hidden">
+          <div className="aurora" aria-hidden />
+          <div className="absolute inset-0 bg-grid" aria-hidden />
+          <div className="relative z-10 mx-auto max-w-5xl px-4 md:px-6 pt-20 pb-24 md:pt-32 md:pb-36 text-center fade-up">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border hairline bg-white/[0.02] text-xs font-mono text-muted-foreground mb-8">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping" />
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary" />
+              </span>
+              available for new projects
+            </div>
+
+            <div className="flex justify-center mb-8">
+              <div className="relative w-24 h-24 md:w-28 md:h-28 rounded-full ring-1 ring-white/10 overflow-hidden">
+                <Image src="/ProfPic.jpg" alt="Nacho Brit" fill className="object-cover" priority />
+              </div>
+            </div>
+
+            <h1 className="heading-display text-5xl md:text-7xl lg:text-[88px] font-semibold">
+              Ignacio <span className="text-primary">Britos</span>
+            </h1>
+            <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+              {t("hero.title")}
+            </p>
+
+            <div className="mt-8 inline-flex items-center gap-2 font-mono text-sm text-muted-foreground">
+              <span className="text-primary">{">"}</span>
+              <TypewriterEffect />
+            </div>
+
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+              <Button size="lg" onClick={scrollToProjects} className="rounded-md gap-2">
+                {t("hero.cta")} <ArrowDown size={16} />
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-md gap-2 bg-transparent border-white/15 hover:bg-white/[0.04]"
+              >
+                <Link href="#contact">
+                  <Mail size={16} /> {t("nav.contact")}
+                </Link>
+              </Button>
+            </div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">Ignacio Britos</h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl px-4">{t("hero.title")}</p>
-          <div className="h-12 text-lg md:text-xl">
-            <TypewriterEffect />
-          </div>
-          <Button size="lg" className="mt-4 md:mt-6" onClick={scrollToProjects}>
-            {t("hero.cta")}
-          </Button>
         </section>
 
-        <section id="about" className="py-16 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">{t("about.title")}</h2>
-          <div className="space-y-4 text-muted-foreground">
-            <p>{t("about.p1")}</p>
-            <p>{t("about.p2")}</p>
-            <p>{t("about.p3")}</p>
-            <p>{t("about.p4")}</p>
-
-            <div className="pt-6">
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Familiar with</h3>
-              <div className="flex flex-wrap gap-2">
+        {/* ABOUT */}
+        <section id="about" className="relative mx-auto max-w-5xl px-4 md:px-6 py-24 md:py-32">
+          <SectionHeader number="01" label={t("nav.about")} title={t("about.title")} />
+          <div className="grid md:grid-cols-5 gap-10 md:gap-16 mt-12">
+            <div className="md:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
+              <p>{t("about.p1")}</p>
+              <p>{t("about.p2")}</p>
+              <p>{t("about.p3")}</p>
+              <p>{t("about.p4")}</p>
+            </div>
+            <div className="md:col-span-2">
+              <p className="section-label mb-4">Stack</p>
+              <div className="flex flex-wrap gap-1.5">
                 {techStack.map((tech) => (
-                  <span key={tech} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+                  <span key={tech} className="tech-chip">
                     {tech}
                   </span>
                 ))}
@@ -83,84 +116,154 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" ref={projectsRef} className="py-8 md:py-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">{t("projects.title")}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+        {/* PROJECTS */}
+        <section
+          id="projects"
+          ref={projectsRef}
+          className="relative mx-auto max-w-6xl px-4 md:px-6 py-24 md:py-32"
+        >
+          <SectionHeader number="02" label="work" title={t("projects.title")} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mt-12">
             {projects.map((project) => (
-              <div key={project.id} className="group border rounded-lg overflow-hidden transition-all hover:shadow-md">
+              <Link
+                key={project.id}
+                href={project.link}
+                target={project.link === "#" ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                className="group card-glow relative flex flex-col rounded-xl border hairline bg-card/40 overflow-hidden"
+              >
                 <div className="aspect-video relative overflow-hidden bg-muted">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={t(project.titleKey)}
                     fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/0 to-background/0 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{t(project.titleKey)}</h3>
-                  <p className="text-muted-foreground mb-4">{t(project.descriptionKey)}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <div className="p-5 flex flex-col gap-3 flex-1">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-base md:text-lg font-semibold heading-tight">
+                      {t(project.titleKey)}
+                    </h3>
+                    <ArrowUpRight
+                      size={16}
+                      className="shrink-0 mt-1 text-muted-foreground transition-all group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                    {t(project.descriptionKey)}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 pt-1">
                     {project.technologies.map((tech) => (
-                      <span key={tech} className="text-xs px-2 py-1 bg-muted rounded-full">
+                      <span key={tech} className="tech-chip">
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm font-medium hover:underline"
-                  >
-                    {t("project.viewProject")} <ExternalLink size={14} />
-                  </Link>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
 
-        <section id="contact" className="py-16 max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">{t("contact.title")}</h2>
-          <p className="text-muted-foreground mb-8">{t("contact.text")}</p>
-          <div className="flex justify-center gap-6">
-            <Link
-              href="mailto:ignbritos@gmail.com"
-              className="flex items-center gap-2 hover:text-primary transition-colors"
-            >
-              <Mail size={20} />
-              <span>Email</span>
-            </Link>
-            <Link
+        {/* CONTACT */}
+        <section id="contact" className="relative mx-auto max-w-3xl px-4 md:px-6 py-24 md:py-32 text-center">
+          <SectionHeader number="03" label="contact" title={t("contact.title")} centered />
+          <p className="mt-6 text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
+            {t("contact.text")}
+          </p>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <ContactLink href="mailto:ignbritos@gmail.com" icon={<Mail size={16} />} label="Email" />
+            <ContactLink
               href="https://github.com/nachobrit"
-              className="flex items-center gap-2 hover:text-primary transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github size={20} />
-              <span>GitHub</span>
-            </Link>
-            <Link
+              icon={<Github size={16} />}
+              label="GitHub"
+              external
+            />
+            <ContactLink
               href="https://linkedin.com/in/nachobrit"
-              className="flex items-center gap-2 hover:text-primary transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin size={20} />
-              <span>LinkedIn</span>
-            </Link>
+              icon={<Linkedin size={16} />}
+              label="LinkedIn"
+              external
+            />
           </div>
         </section>
       </main>
 
-      <footer className="border-t py-8">
-        <div className="container mx-auto px-4 text-center text-muted-foreground">
+      <footer className="border-t hairline">
+        <div className="mx-auto max-w-6xl px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-2 text-xs font-mono text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} Ignacio Britos. {t("footer.rights")}
+            © {new Date().getFullYear()} Ignacio Britos · {t("footer.rights")}
+          </p>
+          <p className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+            built with Next.js · Tailwind · shadcn/ui
           </p>
         </div>
       </footer>
+    </div>
+  )
+}
+
+function SectionHeader({
+  number,
+  label,
+  title,
+  centered = false,
+}: {
+  number: string
+  label: string
+  title: string
+  centered?: boolean
+}) {
+  return (
+    <div className={centered ? "text-center" : ""}>
+      <p className="section-label">
+        {number} <span className="text-muted-foreground/70">/ {label}</span>
+      </p>
+      <h2 className="mt-3 heading-tight text-3xl md:text-5xl font-semibold">{title}</h2>
+    </div>
+  )
+}
+
+function ContactLink({
+  href,
+  icon,
+  label,
+  external = false,
+}: {
+  href: string
+  icon: React.ReactNode
+  label: string
+  external?: boolean
+}) {
+  return (
+    <Link
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className="group inline-flex items-center gap-2 px-4 py-2.5 rounded-md border hairline bg-white/[0.02] hover:border-primary/40 hover:bg-white/[0.04] transition-colors text-sm"
+    >
+      {icon}
+      <span>{label}</span>
+      <ArrowUpRight
+        size={14}
+        className="text-muted-foreground transition-all group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+      />
+    </Link>
+  )
+}
+
+function TypewriterEffect() {
+  return (
+    <div className="typewriter">
+      <span className="font-mono">
+        <span className="text-foreground/70">{"<"}</span>
+        <span className="typing-text text-foreground">Vibe Engineer</span>
+        <span className="text-foreground/70">{" />"}</span>
+      </span>
     </div>
   )
 }
@@ -353,16 +456,20 @@ const projects = [
     technologies: ["DeFi", "Chainlink", "Simulation", "React"],
     link: "https://edgeloan.vercel.app/",
   },
+  {
+    id: 21,
+    titleKey: "project21.title",
+    descriptionKey: "project21.description",
+    image: "/projects/vianditacaptura.png",
+    technologies: ["Next.js", "React", "Mobile", "Vercel"],
+    link: "https://www.viandita.app/",
+  },
+  {
+    id: 22,
+    titleKey: "project22.title",
+    descriptionKey: "project22.description",
+    image: "/projects/forgeai.png",
+    technologies: ["AI", "UEFN", "Verse", "LLM"],
+    link: "#",
+  },
 ]
-
-function TypewriterEffect() {
-  return (
-    <div className="typewriter">
-      <span className="text-primary font-medium">
-        {"<"}
-        <span className="typing-text">Vibe Engineer</span>
-        {" />"}
-      </span>
-    </div>
-  )
-}

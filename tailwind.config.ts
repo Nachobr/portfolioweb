@@ -59,6 +59,14 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "Inter", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "ui-monospace", "monospace"],
+      },
+      letterSpacing: {
+        tighter: "-0.04em",
+        tight: "-0.02em",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

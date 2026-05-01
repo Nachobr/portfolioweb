@@ -470,6 +470,6 @@ const projects = [
     descriptionKey: "project22.description",
     image: "/projects/forgeai.png",
     technologies: ["AI", "UEFN", "Verse", "LLM"],
-    link: "#",
+    link: "https://github.com/Nachobr/uefnaigen",
   },
 ]

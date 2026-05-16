@@ -17,8 +17,32 @@ export default function Home() {
     projectsRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "dateModified": new Date().toISOString(),
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Ignacio Britos",
+      "alternateName": "nachobrit",
+      "jobTitle": "Vibe Engineer",
+      "description": "Vibe Engineer especializado en crear experiencias digitales excepcionales.",
+      "image": "https://ignaciobritos.com/ProfPic.jpg", // Replace with your actual domain
+      "url": "https://ignaciobritos.com", // Replace with your actual domain
+      "sameAs": [
+        "https://github.com/nachobrit",
+        "https://linkedin.com/in/nachobrit"
+      ],
+      "knowsAbout": ["React", "Next.js", "AI", "Blockchain", "Python", "Web Development"]
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Frosted fixed nav */}
       <header className="fixed top-0 inset-x-0 z-50 nav-frost border-b hairline">
         <div className="mx-auto max-w-6xl px-4 md:px-6 h-14 flex items-center justify-between">

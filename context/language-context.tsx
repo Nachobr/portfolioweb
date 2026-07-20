@@ -78,6 +78,8 @@ const translations = {
     "project21.description": "Aplicación web para descubrir, pedir y gestionar viandas caseras y saludables. Conecta a usuarios con cocineros locales a través de una experiencia móvil ágil y sencilla.",
     "project22.title": "ForgeAI — Generador de Mundos UEFN con IA",
     "project22.description": "Convierte ideas de juegos en lenguaje natural en scaffolds de proyectos UEFN: código Verse, manifiestos de dispositivos, planes de layout, configuraciones de economía, tablas de loot e instrucciones de importación.",
+    "project23.title": "Emberfall",
+    "project23.description": "Un ARPG de navegador inspirado en Diablo con combate en tiempo real, botín, mazmorras procedurales y co-op peer-to-peer, jugable en escritorio y móvil sin instalación.",
   },
   en: {
     "nav.about": "About Me",
@@ -144,6 +146,8 @@ const translations = {
     "project21.description": "Web app to discover, order, and manage homemade, healthy meals. Connects users with local cooks through a smooth, mobile-first experience.",
     "project22.title": "ForgeAI — AI-Powered UEFN World Generator",
     "project22.description": "Turns natural-language game ideas into UEFN project scaffolds: Verse code, device manifests, layout plans, economy configs, loot tables, and import instructions.",
+    "project23.title": "Emberfall",
+    "project23.description": "A Diablo-inspired browser ARPG with real-time combat, loot, procedural dungeons, and peer-to-peer co-op, playable on desktop and mobile with no install.",
     "footer.rights": "All rights reserved.",
   },
 }

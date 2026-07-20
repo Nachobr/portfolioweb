@@ -496,4 +496,12 @@ const projects = [
     technologies: ["AI", "UEFN", "Verse", "LLM"],
     link: "https://github.com/Nachobr/uefnaigen",
   },
+  {
+    id: 23,
+    titleKey: "project23.title",
+    descriptionKey: "project23.description",
+    image: "/projects/emberfall.png",
+    technologies: ["ARPG", "WebRTC", "Canvas", "P2P"],
+    link: "https://emberfall-beta.vercel.app/",
+  },
 ]

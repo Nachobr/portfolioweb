@@ -17,18 +17,19 @@ export default function Home() {
     projectsRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
+  // Stable date avoids SSR/client hydration mismatch from new Date()
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    "dateModified": new Date().toISOString(),
+    "dateModified": "2026-08-14",
     "mainEntity": {
       "@type": "Person",
       "name": "Ignacio Britos",
       "alternateName": "nachobrit",
       "jobTitle": "Vibe Engineer",
       "description": "Vibe Engineer especializado en crear experiencias digitales excepcionales.",
-      "image": "https://ignaciobritos.com/ProfPic.jpg", // Replace with your actual domain
-      "url": "https://ignaciobritos.com", // Replace with your actual domain
+      "image": "https://ignaciobritos.com/ProfPic.jpg",
+      "url": "https://ignaciobritos.com",
       "sameAs": [
         "https://github.com/nachobrit",
         "https://linkedin.com/in/nachobrit"
@@ -219,7 +220,7 @@ export default function Home() {
       <footer className="border-t hairline">
         <div className="mx-auto max-w-6xl px-4 md:px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-2 text-xs font-mono text-muted-foreground">
           <p>
-            © {new Date().getFullYear()} Ignacio Britos · {t("footer.rights")}
+            © 2026 Ignacio Britos · {t("footer.rights")}
           </p>
           <p className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
@@ -503,5 +504,13 @@ const projects = [
     image: "/projects/emberfall.png",
     technologies: ["ARPG", "WebRTC", "Canvas", "P2P"],
     link: "https://emberfall-beta.vercel.app/",
+  },
+  {
+    id: 24,
+    titleKey: "project24.title",
+    descriptionKey: "project24.description",
+    image: "/projects/ampagentsupport.png",
+    technologies: ["RAG", "AI", "Next.js", "Vercel"],
+    link: "https://ampagentsupport.vercel.app/",
   },
 ]

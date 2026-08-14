@@ -80,6 +80,9 @@ const translations = {
     "project22.description": "Convierte ideas de juegos en lenguaje natural en scaffolds de proyectos UEFN: código Verse, manifiestos de dispositivos, planes de layout, configuraciones de economía, tablas de loot e instrucciones de importación.",
     "project23.title": "Emberfall",
     "project23.description": "Un ARPG de navegador inspirado en Diablo con combate en tiempo real, botín, mazmorras procedurales y co-op peer-to-peer, jugable en escritorio y móvil sin instalación.",
+    "project24.title": "AmpAssist — RAG Amp Support",
+    "project24.description":
+      "Chat de soporte con IA basado en RAG, con respuestas fundamentadas en el Amp Owner's Manual. Responde sobre AGENTS.md, Orbs, CLI, plugins y más, incluyendo citas a las fuentes.",
   },
   en: {
     "nav.about": "About Me",
@@ -148,6 +151,9 @@ const translations = {
     "project22.description": "Turns natural-language game ideas into UEFN project scaffolds: Verse code, device manifests, layout plans, economy configs, loot tables, and import instructions.",
     "project23.title": "Emberfall",
     "project23.description": "A Diablo-inspired browser ARPG with real-time combat, loot, procedural dungeons, and peer-to-peer co-op, playable on desktop and mobile with no install.",
+    "project24.title": "AmpAssist — RAG Amp Support",
+    "project24.description":
+      "RAG-powered AI support chat with answers grounded in the Amp Owner's Manual. Ask about AGENTS.md, Orbs, CLI, plugins, and more — responses include source citations.",
     "footer.rights": "All rights reserved.",
   },
 }
